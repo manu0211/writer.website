@@ -1,0 +1,289 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #eaeaea;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+a:hover {
+  color: #ffcc00;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #eaeaea;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Home Section */
+.home {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: url('background.jpg') no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+}
+
+.home h1 {
+  font-size: 4rem;
+  font-family: 'Impact', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.home p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  color: #d1d1d1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.home .btn {
+  background-color: #ffcc00;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #111;
+  border-radius: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.home .btn:hover {
+  background-color: #e6b800;
+  transform: translateY(-5px);
+}
+
+.home .btn:active {
+  transform: translateY(2px);
+}
+
+/* Featured Books */
+.featured-books {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  background-color: #222;
+  border-top: 2px solid #444;
+}
+
+.book {
+  text-align: center;
+  background: #333;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.book img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.book h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #ffcc00;
+}
+
+.book p {
+  color: #eaeaea;
+  margin-bottom: 1rem;
+}
+
+.book .btn {
+  background-color: #ffcc00;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #111;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.book .btn:hover {
+  background-color: #e6b800;
+}
+
+.book:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: #111;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 1rem;
+  width: 60%;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ffcc00;
+  color: #111;
+  border-radius: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  color: #eaeaea;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Bio Section */
+.bio {
+  padding: 4rem 2rem;
+  background: #222;
+  text-align: center;
+}
+
+.bio h1 {
+  font-size: 3rem;
+  font-family: 'Impact', sans-serif;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #eaeaea;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1rem;
+  width: 60%;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ffcc00;
+  color: #111;
+  border-radius: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e6b800;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+  }
+
+  .featured-books {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .book {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .newsletter input {
+    width: 80%;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 80%;
+  }
+}
